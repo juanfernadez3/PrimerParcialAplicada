@@ -17,7 +17,7 @@
         <TextBox x:Name="DescripcionTexBox" HorizontalAlignment="Left" Margin="254,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
         <TextBox x:Name="ExistenciaTexBox" HorizontalAlignment="Left" Margin="254,163,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
         <TextBox x:Name="CostosTexbox" HorizontalAlignment="Left" Margin="254,218,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
-        <TextBox x:Name="ValorInventarioTexBox" HorizontalAlignment="Left" Margin="254,273,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
+        <TextBox x:Name="ValorInventarioTexBox" HorizontalAlignment="Left" Margin="254,273,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36" TextChanged="ValorInventarioTexBox_TextChanged"/>
 
         <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="42,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="Button_Click"/>
         <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="172,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="GuardarButton_Click"/>

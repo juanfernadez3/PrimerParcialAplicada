@@ -53,9 +53,9 @@ namespace PrimerParcialAplicada
 
             //articulo.ArticuloID = Convert.ToInt32(ProductoIDTexBox.Text);
             articulo.Descripcion = DescripcionTexBox.Text;
-           // articulo.Existencia = Convert.ToInt32(ExistenciaTexBox.Text);
-          // articulo.Costo = Convert.ToDecimal(CostosTexbox.Text);
-          // articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox.Text);
+            //articulo.Existencia = Convert.ToInt32(ExistenciaTexBox.Text);
+            //articulo.Costo = Convert.ToDecimal(CostosTexbox.Text);
+            //articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox.Text);
 
             return articulo;
         }
@@ -171,6 +171,13 @@ namespace PrimerParcialAplicada
             {
                 MessageBox.Show("persona no valida");
             }
+        }
+
+        private void ValorInventarioTexBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Articulos a = new Articulos();
+
+            a.ValorInventario = a.Existencia * a.Costo;
         }
     }
 }
