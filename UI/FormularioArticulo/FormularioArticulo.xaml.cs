@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,23 +8,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PrimerParcialAplicada.UI.FormularioArticulo;
 using PrimerParcialAplicada.Entidades;
 using PrimerParcialAplicada.BLL;
 using PrimerParcialAplicada.DAL;
-using PrimerParcialAplicada.UI;
 
 
-namespace PrimerParcialAplicada
+namespace PrimerParcialAplicada.UI.FormularioArticulo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica de interacción para Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
@@ -36,7 +32,7 @@ namespace PrimerParcialAplicada
             ProductoIDTexBox.Text = "0";
             DescripcionTexBox.Text = string.Empty;
             ExistenciaTexBox.Text = "0";
-            CostosTexbox.Text = "0";
+            CostosTexbox.Text = "0"; 
             ValorInventarioTexBox.Text = "0";
         }
         public void LlenaCampo(Articulos articulo)
@@ -53,11 +49,11 @@ namespace PrimerParcialAplicada
         {
             Articulos articulo = new Articulos();
 
-            //articulo.ArticuloID = Convert.ToInt32(ProductoIDTexBox);
+            articulo.ArticuloID = Convert.ToInt32(ProductoIDTexBox);
             articulo.Descripcion = DescripcionTexBox.Text;
-           // articulo.Existencia = Convert.ToInt32(ExistenciaTexBox);
-           // articulo.Costo = Convert.ToDecimal(CostosTexbox);
-           // articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox);
+            articulo.Existencia = Convert.ToInt32(ExistenciaTexBox);
+            articulo.Costo = Convert.ToDecimal(CostosTexbox);
+            articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox);
 
             return articulo;
         }
@@ -71,7 +67,7 @@ namespace PrimerParcialAplicada
         {
             bool paso = true;
 
-
+            
             if (DescripcionTexBox.Text == string.Empty)
             {
                 MessageBox.Show("Dede Ingresar Descripccion ");
@@ -121,14 +117,14 @@ namespace PrimerParcialAplicada
 
 
             else
-            {
-                if (!ExisteEnLaBaseDeDatos())
-                {
-                    MessageBox.Show("ERROR", "error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-                paso = ArticulosBLL.Modificar(a);
-            }
+                    {
+                        if (!ExisteEnLaBaseDeDatos())
+                        {
+                            MessageBox.Show("ERROR", "error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return;
+                        }
+                        paso = ArticulosBLL.Modificar(a); 
+                    }
 
             if (paso)
             {
@@ -156,6 +152,7 @@ namespace PrimerParcialAplicada
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
+
             int id;
             Articulos articulo = new Articulos();
             int.TryParse(ProductoIDTexBox.Text, out id);
