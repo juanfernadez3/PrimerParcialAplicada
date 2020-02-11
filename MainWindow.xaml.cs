@@ -12,11 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PrimerParcialAplicada.UI.FormularioArticulo;
 using PrimerParcialAplicada.Entidades;
 using PrimerParcialAplicada.BLL;
 using PrimerParcialAplicada.DAL;
-using PrimerParcialAplicada.UI;
 
 
 namespace PrimerParcialAplicada

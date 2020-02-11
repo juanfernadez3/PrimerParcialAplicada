@@ -23,6 +23,7 @@
         <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="172,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="GuardarButton_Click"/>
         <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="298,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="EliminarButton_Click"/>
         <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="362,28,0,0" VerticalAlignment="Top" Height="50" Width="70" Click="BuscarButton_Click"/>
+        <Button Content="Consulta" HorizontalAlignment="Left" Margin="432,362,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
 
     </Grid>
 </Window>
