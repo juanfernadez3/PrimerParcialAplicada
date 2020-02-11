@@ -51,11 +51,11 @@ namespace PrimerParcialAplicada
         {
             Articulos articulo = new Articulos();
 
-            //articulo.ArticuloID = Convert.ToInt32(ProductoIDTexBox);
+            //articulo.ArticuloID = Convert.ToInt32(ProductoIDTexBox.Text);
             articulo.Descripcion = DescripcionTexBox.Text;
-           // articulo.Existencia = Convert.ToInt32(ExistenciaTexBox);
-           // articulo.Costo = Convert.ToDecimal(CostosTexbox);
-           // articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox);
+           // articulo.Existencia = Convert.ToInt32(ExistenciaTexBox.Text);
+          // articulo.Costo = Convert.ToDecimal(CostosTexbox.Text);
+          // articulo.ValorInventario = Convert.ToDecimal(ValorInventarioTexBox.Text);
 
             return articulo;
         }
@@ -165,7 +165,7 @@ namespace PrimerParcialAplicada
             if (articulo != null)
             {
                 MessageBox.Show("Persona valida");
-                LlenaClase();
+                LlenaCampo(articulo);
             }
             else
             {
