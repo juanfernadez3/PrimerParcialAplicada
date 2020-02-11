@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrimerParcialAplicada"
         mc:Ignorable="d"
-        Title="Registro de Productos" Height="450" Width="550">
+        Title="Registro de Productos" Height="500" Width="550">
     <Grid>
         <Label Content="ProductoID" HorizontalAlignment="Left" Margin="50,41,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Descripccion" HorizontalAlignment="Left" Margin="50,97,0,0" VerticalAlignment="Top" FontSize="20"/>
@@ -13,17 +13,17 @@
         <Label Content="Costos" HorizontalAlignment="Left" Margin="50,217,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Valor Inventario" HorizontalAlignment="Left" Margin="50,272,0,0" VerticalAlignment="Top" FontSize="20"/>
 
-        <TextBox x:Name="ProductoIDTexBox" HorizontalAlignment="Left" Margin="254,42,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" Height="36"/>
-        <TextBox x:Name="DescripcionTexBox" HorizontalAlignment="Left" Margin="254,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
-        <TextBox x:Name="ExistenciaTexBox" HorizontalAlignment="Left" Margin="254,163,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
-        <TextBox x:Name="CostosTexbox" HorizontalAlignment="Left" Margin="254,218,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
-        <TextBox x:Name="ValorInventarioTexBox" HorizontalAlignment="Left" Margin="254,273,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36" TextChanged="ValorInventarioTexBox_TextChanged"/>
+        <TextBox Name="ProductoIDTextBox" HorizontalAlignment="Left" Margin="254,42,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" Height="36"/>
+        <TextBox Name="DescripcionTextBox" HorizontalAlignment="Left" Margin="254,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
+        <TextBox Name="ExistenciaTextBox" HorizontalAlignment="Left" Margin="254,163,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
+        <TextBox Name="CostosTextBox" HorizontalAlignment="Left" Margin="254,218,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36"/>
+        <TextBox Name="ValorInventarioTextBox" HorizontalAlignment="Left" Margin="254,273,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="36" TextChanged="ValorInventarioTexBox_TextChanged"/>
 
-        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="42,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="Button_Click"/>
-        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="172,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="GuardarButton_Click"/>
-        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="298,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="EliminarButton_Click"/>
-        <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="362,28,0,0" VerticalAlignment="Top" Height="50" Width="70" Click="BuscarButton_Click"/>
-        <Button Content="Consulta" HorizontalAlignment="Left" Margin="432,362,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
+        <Button Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="42,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="Button_Click"/>
+        <Button Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="172,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="GuardarButton_Click"/>
+        <Button Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="298,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="EliminarButton_Click"/>
+        <Button Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="362,28,0,0" VerticalAlignment="Top" Height="50" Width="70" Click="BuscarButton_Click"/>
+        <Button Name="ConsultarButton" Content="Consulta" HorizontalAlignment="Left" Margin="425,362,0,0" VerticalAlignment="Top" Height="50" Width="90" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

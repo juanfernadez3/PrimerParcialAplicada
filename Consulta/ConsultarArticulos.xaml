@@ -1,0 +1,29 @@
+﻿<Window x:Class="PrimerParcialAplicada.Consulta.ConsultarArticulos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimerParcialAplicada.Consulta"
+        mc:Ignorable="d"
+         Title="ConsultarArticulos" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="Filtrar" Height="25" Margin="20,9,720,-9" Grid.Row="0"/>
+        <ComboBox Name="FiltrarComboBox" Height="25" Width="100" Grid.Row="0" Margin="70,9,630,-9">
+            <ComboBoxItem Content="TODO"></ComboBoxItem>
+            <ComboBoxItem Content="ID"></ComboBoxItem>
+            <ComboBoxItem Content="Descripcion"></ComboBoxItem>
+            <ComboBoxItem Content="Existencia"></ComboBoxItem>
+            <ComboBoxItem Content="Costo"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Criterio" Width="100" Height="25" Margin="210,9,490,-9" Grid.Row="0"></Label>
+        <TextBox Name="CriterioTextBox" Grid.Row="0" Height="25" Margin="280,9,370,-9"/>
+        <Button Name="ConsultarButton" Content="Consultar" Margin="470,9,185,0" Grid.Row="0" Click="ConsultarButton_Click" Height="30" VerticalAlignment="Top"/>
+
+        <DataGrid Name="ConsultarArticulosDataGrid" Margin="0,49,0,-409"></DataGrid>
+    </Grid>
+</Window>
+

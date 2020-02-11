@@ -91,13 +91,13 @@ namespace PrimerParcialAplicada.BLL
             return persona;
         }
 
-        public static List<Articulos> GetList(Expression<Func<Articulos, bool>> persona)
+        public static List<Articulos> GetList(Expression<Func<Articulos, bool>> articulo)
         {
-            List<Articulos> Lista = new List<Articulos>();
+            List<Articulos> lista = new List<Articulos>();
             Contexto db = new Contexto();
             try
             {
-
+                lista = db.Articulos.Where(articulo).ToList();
             }
             catch (Exception)
             {
@@ -107,7 +107,7 @@ namespace PrimerParcialAplicada.BLL
             {
                 db.Dispose();
             }
-            return Lista;
+            return lista;
         }
     }
 }
